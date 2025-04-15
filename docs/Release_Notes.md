@@ -1,4 +1,4 @@
-GFS V16.3.24 RELEASE NOTES
+GFS V16.3.25 RELEASE NOTES
 
 -------
 PRELUDE
@@ -13,9 +13,9 @@ The NOAA VLab and the NOAA-EMC and NCAR organization spaces on GitHub are used t
 
 ```bash
 cd $PACKAGEROOT
-mkdir gfs.v16.3.24
-cd gfs.v16.3.24
-git clone -b EMC-v16.3.24 https://github.com/NOAA-EMC/global-workflow.git .
+mkdir gfs.v16.3.25
+cd gfs.v16.3.25
+git clone -b EMC-v16.3.25 https://github.com/NOAA-EMC/global-workflow.git .
 cd sorc
 ./checkout.sh -o
 ```
@@ -26,7 +26,7 @@ The checkout script extracts the following GFS components:
 | --------- | ----------- | ----------------- |
 | MODEL     | GFS.v16.3.23 | Jun.Wang@noaa.gov |
 | GLDAS     | gldas_gfsv16_release.v.2.1.0 | Helin.Wei@noaa.gov |
-| GSI       | gfsda.v16.3.22 | Andrew.Collard@noaa.gov |
+| GSI       | gfsda.v16.3.23 | Andrew.Collard@noaa.gov |
 | UFS_UTILS | ops-gfsv16.3.20 | George.Gayno@noaa.gov |
 | POST      | upp_v8.3.0 | Wen.Meng@noaa.gov |
 
@@ -49,76 +49,76 @@ cd ../ecf
 VERSION FILE CHANGES
 --------------------
 
-* `versions/run.ver` - change `version=v16.3.24`, `gfs_ver=v16.3.24`, and `obsproc_ver=v1.3`
+* `versions/run.ver` - change `version=v16.3.25`, `gfs_ver=v16.3.25`, and `obsproc_ver=v1.3`
 * `versions/MACHINE.ver` - update `obsproc_run_ver=1.3.0` and `prepobs_run_ver=1.2.0`
 
 SORC CHANGES
 ------------
 
-* No changes from GFS v16.3.23
+* No changes from GFS v16.3.24
 
 JOBS CHANGES
 ------------
 
-* No changes from GFS v16.3.23
+* No changes from GFS v16.3.24
 
 PARM/CONFIG CHANGES
 -------------------
 
-* No changes from GFS v16.3.23
+* No changes from GFS v16.3.24
 
 SCRIPT CHANGES
 --------------
 
-* No changes from GFS v16.3.23
+* No changes from GFS v16.3.24
 
 FIX CHANGES
 -----------
 
-* No changes from GFS v16.3.23
+* No changes from GFS v16.3.24
 
 MODULE CHANGES
 --------------
 
-* No changes from GFS v16.3.23
+* No changes from GFS v16.3.24
 
 CHANGES TO FILE AND FILE SIZES
 ------------------------------
 
-* No changes from GFS v16.3.23
+* No changes from GFS v16.3.24
 
 ENVIRONMENT AND RESOURCE CHANGES
 --------------------------------
 
-* No changes from GFS v16.3.23
+* No changes from GFS v16.3.24
 
 PRE-IMPLEMENTATION TESTING REQUIREMENTS
 ---------------------------------------
 
 * Which production jobs should be tested as part of this implementation?
-  * None
+  * emcsfc_sfc_prep and analysis
 * Does this change require a 30-day evaluation?
   * No
 
 DISSEMINATION INFORMATION
 -------------------------
 
-* No changes from GFS v16.3.23
+* No changes from GFS v16.3.24
 
 HPSS ARCHIVE
 ------------
 
-* No changes from GFS v16.3.23
+* No changes from GFS v16.3.24
 
 JOB DEPENDENCIES AND FLOW DIAGRAM
 ---------------------------------
 
-* No changes from GFS v16.3.23
+* No changes from GFS v16.3.24
 
 DOCUMENTATION
 -------------
 
-* No changes from GFS v16.3.23
+* No changes from GFS v16.3.24
 
 PREPARED BY
 -----------
