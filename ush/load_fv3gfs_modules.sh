@@ -20,7 +20,7 @@ source "${HOMEgfs}/versions/run.ver"
 module use "${HOMEgfs}/modulefiles"
 
 case "${MACHINE_ID}" in
-  "wcoss2" | "hera" | "orion" | "hercules" | "gaea" | "jet" | "s4" | "noaacloud")
+  "wcoss2" | "hera" | "orion" | "hercules" | "gaea" | "jet" | "s4" | "noaacloud" | "derecho")
     module load "module_base.${MACHINE_ID}"
     ;;
   *)

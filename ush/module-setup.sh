@@ -21,6 +21,13 @@ elif [[ ${MACHINE_ID} = hera* ]] ; then
     module reset
     set -u
 
+elif [[ $MACHINE_ID = derecho* ]] ; then
+    # We are on NCAR Derecho
+    if ( ! eval module help > /dev/null 2>&1 ) ; then
+        source /glade/u/apps/derecho/default/util/localinit.sh
+    fi
+    module purge
+
 elif [[ ${MACHINE_ID} = hercules* ]] ; then
     # We are on Hercules
     if ( ! eval module help > /dev/null 2>&1 ) ; then

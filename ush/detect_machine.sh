@@ -35,6 +35,8 @@ case $(hostname -f) in
 
   Orion-login-[1-4].HPC.MsState.Edu) MACHINE_ID=orion ;; ### orion1-4
 
+  derecho4[0-345]) MACHINE_ID=derecho ;; ### derecho
+
   [Hh]ercules-login-[1-4].[Hh][Pp][Cc].[Mm]s[Ss]tate.[Ee]du) MACHINE_ID=hercules ;; ### hercules1-4
 
   login[1-4].stampede2.tacc.utexas.edu) MACHINE_ID=stampede ;; ### stampede1-4
@@ -73,6 +75,9 @@ elif [[ -d /mnt/lfs5 ]]; then
 elif [[ -d /scratch1 ]]; then
   # We are on NOAA Hera
   MACHINE_ID=hera
+elif [[ -d /glade ]]; then
+  # We are on NOAA Hera
+  MACHINE_ID=derecho
 elif [[ -d /work ]]; then
   # We are on MSU Orion or Hercules
   mount=$(findmnt -n -o SOURCE /home)
